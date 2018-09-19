@@ -1,0 +1,91 @@
+body {
+    background: #F2F4F3;
+}
+
+.clase {
+    margin-top: 10%;
+}
+
+.carousel-caption {
+    transform: translateY(-50%);
+    bottom: 0;
+    top: 50%;
+}
+
+.fondo {
+    transition-property: all;
+    transition-duration: 0.6s;
+    background: #6D8EA0;
+    /* opacity: 0.9;*/
+}
+
+.h1Slider {
+    font-size: 3rem;
+}
+
+.h4Slider {
+    font-size: 2rem;
+}
+
+.desplegable {
+    position: relative!important;
+    padding-bottom: 64px;
+    margin-top: -95px;
+}
+
+.letras {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 1)!important;
+}
+
+.letras:hover {
+    border-bottom: solid 2px white;
+}
+
+.page {
+    border-bottom: solid 2px white;
+}
+
+.navbar-toggler {
+    color: rgba(255, 255, 255, .7);
+    border-color: rgba(255, 255, 255, .7);
+}
+
+.margenesTexto {
+    margin-top: 11%;
+}
+
+
+/*Efecto bluir*/
+
+.efectoBluir {
+    filter: blur(12px);
+    transition: all 0.1s ease;
+}
+
+@media (max-width: 500px) {
+    .letras {
+        font-size: 1rem;
+    }
+    .img-responsive {
+        width: 55%;
+    }
+    h1 {
+        font-size: 2rem!important;
+    }
+    h4 {
+        font-size: 1.1rem!important;
+    }
+    .clase {
+        margin-top: 3%;
+    }
+    .margenesTexto {
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width: 890px) {
+    .margenesTexto {
+        margin-bottom: 10%;
+    }
+}
