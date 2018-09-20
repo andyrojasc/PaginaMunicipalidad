@@ -2,8 +2,45 @@ body {
     background: #F2F4F3;
 }
 
+h1 {
+    font-size: 35px;
+}
+
+@media (max-width: 890px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+
+h2 {
+    font-size: 30px;
+}
+
+@media (max-width: 890px) {
+    h2 {
+        font-size: 25px;
+    }
+}
+
+h5 {
+    font-size: 20px;
+}
+
+@media (max-width: 890px) {
+    h5 {
+        font-size: 18px;
+    }
+}
+
 .clase {
     margin-top: 10%;
+}
+
+@media (max-width: 1000px) {
+    .marginContact {
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
 }
 
 .carousel-caption {
@@ -53,6 +90,7 @@ body {
 
 .margenesTexto {
     margin-top: 11%;
+    margin-bottom: 5%;
 }
 
 
