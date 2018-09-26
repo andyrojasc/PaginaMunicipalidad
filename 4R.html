@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -11,7 +11,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/prueba.js"></script>
-    <title>Contacto</title>
+    <title>Inicio</title>
 </head>
 
 <body>
@@ -28,15 +28,15 @@
                 <div class="collapse navbar-collapse opacity" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mr-2">
-                            <a id="" class="nav-link letras " href="index.html">Inicio</a>
+                            <a class="nav-link letras " href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item mr-2">
 
-                            <a id="" class="nav-link letras page" href="contact.html">Contact</a>
+                            <a class="nav-link letras " href="contact.html">Contact</a>
 
                         </li>
                         <li class="nav-item mr-2">
-                            <a id="" class="nav-link letras" href="4R.html">4Rs</a>
+                            <a class="nav-link letras page" href="4R.html">4Rs</a>
                         </li>
                     </ul>
                 </div>
@@ -96,78 +96,84 @@
             </a>
         </div>
 
-        <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="col-12 text-center py-5 bg-light">Lorem ipsum</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-6 pl-0 pr-0">
+                    <img class="img-fluid" src="./includes/img/emp.jpg">
+                </div>
+                <div class="col-md-12 col-lg-6 text-center margenesTexto">
+                    <h2>¿Lorem ipsum dolor?</h2>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin ex nibh, et vehicula eros molestie ut. Proin dolor ex, tempus et pretium id, dictum nec risus.</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
             <div class="d-lg-none">
+                <!--Aquí la imagen cambia solo cuando esta de tablet de pie hasta movil-->
                 <div class="row">
-                    <div class="col-12 pl-0 pr-0 clase margin">
+                    <div class="col-md-12 pl-0 pr-0">
+                        <img class="img-fluid" src="./includes/img/pla.jpg">
+                    </div>
+                    <div class="col-md-12 text-center margenesTexto">
                         <h2>¿Lorem ipsum dolor?</h2>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin ex nibh, et vehicula eros molestie ut.</h5>
-                    </div>
-                    <div class="col-12 pl-0 pr-0 clase">
-                        <h2 clas>¿Lorem ipsum dolor?</h2>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin ex nibh, et vehicula eros molestie ut.</h5>
-                    </div>
-                    <div class="col-12 pl-0 pr-0 clase">
-                        <h2>¿Lorem ipsum dolor?</h2>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin ex nibh, et vehicula eros molestie ut.</h5>
-                    </div>
-
-                    <div class="col-12 ">
-                        <h2 class="marginContact">Contact</h2>
-                        <div class="form-group">
-                            <label><h5>Email address</h5></label>
-                            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small class="form-text text-muted">We'll never share your email with anyone else.</small>
-                        </div>
-                        <div class="form-group">
-                            <label><h5>Password</h5></label>
-                            <input type="password" class="form-control" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <label><h5>Comment</h5></label>
-                            <input type="text" class="form-control" placeholder="Comment">
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Submit</button>
-
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin ex nibh, et vehicula eros molestie ut. Proin dolor ex, tempus et pretium id, dictum nec risus.</h5>
                     </div>
                 </div>
             </div>
 
-            <div class="d-none d-lg-block clase">
+            <div class="d-none d-lg-block">
                 <!--Aquí la imagen cambia solo cuando esta de tablet acostado hasta desktop-->
                 <div class="row">
-                    <div class="col-lg-6  margenesTexto">
-                        <div>
-                            <h2>¿Lorem ipsum dolor?</h2>
-                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin ex nibh, et vehicula eros molestie ut.</h5>
-                        </div>
-                        <div class="clase">
-                            <h2>¿Lorem ipsum dolor?</h2>
-                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin ex nibh, et vehicula eros molestie ut.</h5>
-                        </div>
-                        <div class="clase">
-                            <h2>¿Lorem ipsum dolor?</h2>
-                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin ex nibh, et vehicula eros molestie ut.</h5>
-                        </div>
+                    <div class="col-lg-6 text-center margenesTexto">
+                        <h2>¿Lorem ipsum dolor?</h2>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin ex nibh, et vehicula eros molestie ut. Proin dolor ex, tempus et pretium id, dictum nec risus.</h5>
                     </div>
-                    <div class="col-lg-6  margenesTexto">
-                        <h2>Contact</h2><br>
-                        <div class="form-group">
-                            <label><h5>Email address</h5></label>
-                            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small class="form-text text-muted">We'll never share your email with anyone else.</small>
-                        </div>
-                        <div class="form-group">
-                            <label><h5>Password</h5></label>
-                            <input type="password" class="form-control" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <label><h5>Comment</h5></label>
-                            <textarea type="text" class="form-control" placeholder="Comment"></textarea>
-                        </div>
+                    <div class="col-lg-6 pl-0 pr-0">
+                        <img class="img-fluid" src="./includes/img/pla.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 pl-0 pr-0">
+                    <img class="img-fluid" src="./includes/img/emp.jpg">
+                </div>
+                <div class="col-md-12 col-lg-6 text-center margenesTexto">
+                    <h2>¿Lorem ipsum dolor?</h2>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin ex nibh, et vehicula eros molestie ut. Proin dolor ex, tempus et pretium id, dictum nec risus.</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="d-lg-none">
+                <!--Aquí la imagen cambia solo cuando esta de tablet de pie hasta movil-->
+                <div class="row">
+                    <div class="col-md-12 pl-0 pr-0">
+                        <img class="img-fluid" src="./includes/img/pla.jpg">
+                    </div>
+                    <div class="col-md-12 text-center margenesTexto">
+                        <h2>¿Lorem ipsum dolor?</h2>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin ex nibh, et vehicula eros molestie ut. Proin dolor ex, tempus et pretium id, dictum nec risus.</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-none d-lg-block">
+                <!--Aquí la imagen cambia solo cuando esta de tablet acostado hasta desktop-->
+                <div class="row">
+                    <div class="col-lg-6 text-center margenesTexto">
+                        <h2>¿Lorem ipsum dolor?</h2>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin ex nibh, et vehicula eros molestie ut. Proin dolor ex, tempus et pretium id, dictum nec risus.</h5>
+                    </div>
+                    <div class="col-lg-6 pl-0 pr-0">
+                        <img class="img-fluid" src="./includes/img/pla.jpg">
                     </div>
                 </div>
             </div>
@@ -175,19 +181,19 @@
 
 
 
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+            </div>
+            <!-- /.container -->
+        </footer>
+
     </div>
-
-    <br><br><br><br><br><br>
-    <br><br><br><br><br><br>
-
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
-        </div>
-        <!-- /.container -->
-    </footer>
-    </div>
-
-
+    <!-- Fin del contenido pagina, para el fecto bluir -->
 </body>
+
+</html>
