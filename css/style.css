@@ -14,8 +14,26 @@ body {
     overflow-x: hidden;
 }
 
+/*************************Header*******************************/
+.clase {
+    margin-top: 10%;
+}
 
-/*Pagina de contactos*/
+.carousel-caption {
+    transform: translateY(-50%);
+    bottom: 0;
+    top: 50%;
+}
+
+.fondo {
+    transition-property: all;
+    transition-duration: 0.6s;
+    background: #6D8EA0;
+    /* opacity: 0.9;*/
+}
+/*************************Fin de header*******************************/
+
+/*****************Pagina de contactos*******************/
 
 .background-header {
     background-image: url(../img/background-header.png);
@@ -134,10 +152,9 @@ h1 {
     margin-top: 5%;
     margin-bottom: 5%;
 }
+/***************Fin de pagina de contactos*******************/
 
-
-/*Fin de pagina de contactos*/
-
+/*************************Letras*******************************/
 h2 {
     font-size: 30px;
 }
@@ -145,23 +162,7 @@ h2 {
 h5 {
     font-size: 20px;
 }
-
-.clase {
-    margin-top: 10%;
-}
-
-.carousel-caption {
-    transform: translateY(-50%);
-    bottom: 0;
-    top: 50%;
-}
-
-.fondo {
-    transition-property: all;
-    transition-duration: 0.6s;
-    background: #6D8EA0;
-    /* opacity: 0.9;*/
-}
+/*************************Fin de letras*******************************/
 
 .h1Slider {
     font-size: 3rem;
