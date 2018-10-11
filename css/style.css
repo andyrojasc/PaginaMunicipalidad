@@ -22,6 +22,13 @@ body {
 
 /*************************Header*******************************/
 
+.header-info {
+    background-image: url(../img/Info/header-02-02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+}
+
 .clase {
     margin-top: 10%;
 }
@@ -39,6 +46,33 @@ body {
     /* opacity: 0.9;*/
 }
 
+.letras {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 1)!important;
+}
+
+.letras::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #B5E400;
+    transition: width .3s;
+}
+
+.letras:hover::after {
+    width: 100%;
+}
+
+.page::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #B5E400;
+    transition: width .3s;
+}
+
 
 /*************************Fin de header*******************************/
 
@@ -49,6 +83,7 @@ body {
     background-image: url(../img/background-header.png);
     background-repeat: no-repeat;
     padding-right: 0;
+    max-width: 100%;
 }
 
 .margen-contactenos {
@@ -85,10 +120,10 @@ p {
 
 .cajaTexto2-contactenos-formulario {
     background-color: rgba(255, 255, 255, 0.2);
-    margin-right: 5%;
-    margin-left: 5%;
+    margin: 0% 5% 0% 5%;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 17%;
 }
 
 .rayas-form:before,
@@ -102,14 +137,14 @@ p {
 .rayas-form:before {
     border-top: 3px solid white;
     border-left: 3px solid white;
-    top: 6%;
+    top: 5%;
     left: 7%;
 }
 
 .rayas-form:after {
     border-right: 3px solid white;
     border-bottom: 3px solid white;
-    bottom: 6%;
+    bottom: 5%;
     right: 7%;
 }
 
@@ -203,13 +238,6 @@ p {
     font-family: "Comfortaa";
 }
 
-.header-info {
-    background-image: url(../img/Info/header-02-02.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 5%;
-}
-
 .caja-texto-info {
     background-color: #52AA00;
     padding: 5%;
@@ -243,28 +271,29 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 5%;
+    background-position: center;
 }
 
 .caja-header {
     background-color: #52AA00;
-    margin-right: 5%;
-    margin-left: 5%;
     padding: 2%;
-    width: 400px;
-    text-align: center;
     margin-top: 20px;
     margin-bottom: 50px;
 }
 
 .caja-mapa {
     background-color: #52AA00;
-    margin-right: 5%;
-    margin-left: 5%;
-    padding: 2%;
+    padding: 1.5%;
     width: 200px;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    border-radius: 12px;
+}
+
+.caja-mapa:hover {
+    background-color: rgb(69, 136, 7);
+    transition-duration: 0.5s;
 }
 
 .black {
@@ -292,6 +321,10 @@ h5 {
     font-size: 20px;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 
 /*************************Fin de letras*******************************/
 
@@ -307,33 +340,6 @@ h5 {
     position: relative!important;
     padding-bottom: 64px;
     margin-top: -95px;
-}
-
-.letras {
-    font-size: 1.3rem;
-    color: rgba(255, 255, 255, 1)!important;
-}
-
-.letras::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #B5E400;
-    transition: width .3s;
-}
-
-.letras:hover::after {
-    width: 100%;
-}
-
-.page::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #B5E400;
-    transition: width .3s;
 }
 
 .navbar-toggler {
@@ -546,7 +552,7 @@ button {
 
 /*****************Media queries************************/
 
-@media (max-width: 1295px) {
+@media (max-width: 1297px) {
     .margen-boton {
         margin-bottom: 12%;
     }
@@ -565,9 +571,6 @@ button {
 @media (max-width: 990px) {
     .margen-contactenos {
         margin-top: 8%;
-    }
-    .page::after {
-        width: 90%;
     }
     .rayas-form:before {
         top: 5.6%;
@@ -602,6 +605,7 @@ button {
     .vl {
         display: none;
     }
+    .header-horarios {}
 }
 
 @media (max-width: 890px) {
