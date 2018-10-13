@@ -116,14 +116,13 @@ p {
     border-style: solid;
     border-width: thin;
     margin: 0% 4% 0% 5%;
+    height: 800px;
 }
 
 .cajaTexto2-contactenos-formulario {
     background-color: rgba(255, 255, 255, 0.2);
     margin: 0% 5% 0% 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 17%;
+    height: 800px;
 }
 
 .rayas-form:before,
@@ -137,15 +136,15 @@ p {
 .rayas-form:before {
     border-top: 3px solid white;
     border-left: 3px solid white;
-    top: 5%;
-    left: 7%;
+    /* top: 5%;
+    left: 7%;*/
 }
 
 .rayas-form:after {
     border-right: 3px solid white;
     border-bottom: 3px solid white;
     bottom: 5%;
-    right: 7%;
+    right: 6.5%;
 }
 
 #tipografia-cocon {
@@ -175,12 +174,8 @@ p {
     margin: 10% 0% 4% 8%;
 }
 
-.margenes-cajas-formulario {
-    margin-top: 10%;
-}
-
-.margen-boton {
-    margin-bottom: 2%;
+.margenes-cajas-form {
+    margin: 0% 8% 0% 8%;
 }
 
 .fondo-info {
@@ -342,11 +337,6 @@ a:hover {
     margin-top: -95px;
 }
 
-.navbar-toggler {
-    color: rgba(255, 255, 255, .7);
-    border-color: rgba(255, 255, 255, .7);
-}
-
 .margenesTexto {
     margin-top: 11%;
     margin-bottom: 5%;
@@ -374,10 +364,7 @@ button {
 /*****************Footer************************/
 
 .footer-distributed {
-    /* background-image: url(../img/background-footer.png);
-    background-size: cover;
-    background-repeat: no-repeat;*/
-    background: #33383b;
+    background-image: url(../img/background-footer.png);
     width: 100%;
     text-align: left;
     padding: 55px 50px;
@@ -569,6 +556,12 @@ button {
 }
 
 @media (max-width: 990px) {
+    .footer-distributed .footer-center p {
+        display: block;
+    }
+    .letras:hover::after {
+        display: none;
+    }
     .margen-contactenos {
         margin-top: 8%;
     }
@@ -603,9 +596,13 @@ button {
         width: 25%;
     }
     .vl {
-        display: none;
+        border-bottom: 5px solid green;
+        position: relative;
+        display: block;
+        width: 350px;
+        margin: auto;
+        height: 0;
     }
-    .header-horarios {}
 }
 
 @media (max-width: 890px) {
@@ -657,6 +654,15 @@ button {
     .rayas-form:after {
         right: 7.2%;
     }
+    .vl {
+        width: 280px;
+    }
+}
+
+@media (max-width: 393px) {
+    .cajaTexto1-contactenos {
+        height: 1000px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -668,5 +674,8 @@ button {
     }
     .rayas-form:after {
         right: 7.9%;
+    }
+    .vl {
+        width: 200px;
     }
 }
