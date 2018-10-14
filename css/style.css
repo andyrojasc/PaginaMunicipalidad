@@ -607,23 +607,7 @@ button {
     }
     .margenesTexto {
         margin-bottom: 11%;
-        /* font-family: 18px;*/
     }
-    /* .tipografia-titulos-info {
-        font-size: 2rem!important;
-    }
-    .tipografia-titulos-cajas {
-        font-size: 20px;
-    }
-    .tipografia-texto-cajas {
-        font-size: 14px;
-    }
-    /*h2 {
-        font-size: 12px;
-    }
-    h5 {
-        font-size: 18px;
-    }*/
     .margen-contactenos {
         margin-top: 9%;
     }
@@ -665,18 +649,6 @@ button {
     .img-responsive {
         width: 55%;
     }
-    /* h1 {
-        font-size: 1.2rem!important;
-    }
-    h4 {
-        font-size: 1.1rem!important;
-    }
-    h3 {
-        font-size: 1.1rem!important;
-    }
-    h5 {
-        font-size: 14px;
-    }*/
     .tipografia-titulos-info {
         font-size: 2rem!important;
     }
@@ -686,9 +658,6 @@ button {
     .margenesTexto {
         margin-bottom: 10%;
     }
-    /*.cajaTexto1-contactenos {
-        height: 550px;
-    }*/
     .rayas-form:before {
         left: 7.2%;
     }
@@ -704,9 +673,6 @@ button {
 }
 
 @media (max-width: 393px) {
-    /*  .tipografia-titulos-cajas {
-        font-size: 10px;
-    }*/
     .tipografia-titulos-info {
         font-size: 1.1rem!important;
     }
@@ -739,7 +705,4 @@ button {
     .vl {
         width: 200px;
     }
-    /* h2 {
-        font-size: 1rem!important
-    }*/
 }
