@@ -17,17 +17,11 @@ body {
 .div-col {
     padding-right: 0px;
     padding-left: 0px;
+    text-align: center;
 }
 
 
 /*************************Header*******************************/
-
-.header-info {
-    background-image: url(../img/Info/header-02-02.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 5%;
-}
 
 .clase {
     margin-top: 10%;
@@ -73,6 +67,14 @@ body {
     transition: width .3s;
 }
 
+.logo-header {
+    margin-bottom: 1%;
+}
+
+.logo-header:hover {
+    cursor: pointer;
+}
+
 
 /*************************Fin de header*******************************/
 
@@ -95,7 +97,7 @@ body {
 }
 
 .margen-contactenos {
-    margin-top: 5%;
+    margin-top: 4%;
     background-image: url(../img/background-contactUs.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -205,10 +207,18 @@ h1 {
 
 /***************Pagina de info*******************/
 
+.header-info {
+    background-image: url(../img/Info/header-02-02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    background-position: center;
+}
+
 .caja-info {
     background-color: #52AA00;
     padding: 2%;
-    width: 400px;
+    width: 500px;
     text-align: center;
     margin-bottom: 0px;
 }
@@ -231,12 +241,11 @@ p {
 }
 
 .caja-texto-info {
-    background-color: #52AA00;
+    background-color: rgb(82, 170, 0, 0.8);
     padding: 5%;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
-    opacity: 0.7;
 }
 
 .caja-texto-info-2 {
@@ -250,6 +259,18 @@ p {
 .tipografia-titulos-info {
     color: #fff;
     font-size: 400%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.mision-desktop {
+    display: block;
+}
+
+.mision-movil {
+    display: none;
 }
 
 
@@ -552,6 +573,9 @@ button {
 }
 
 @media (max-width: 990px) {
+    .logo-header {
+        width: 30%;
+    }
     .footer-distributed .footer-center p {
         display: block;
     }
@@ -584,15 +608,16 @@ button {
         margin-left: 0;
     }
     .logoFacebook {
-        width: 25%;
+        width: 35%;
         margin-left: 0%;
-        margin-top: 4%;
+        margin-top: 10%;
     }
     .logoGestion {
-        width: 25%;
+        width: 30%;
+        margin-top: 7%;
     }
     .vl {
-        border-bottom: 5px solid green;
+        border-bottom: 3px solid green;
         position: relative;
         display: block;
         width: 350px;
@@ -627,15 +652,47 @@ button {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    /* p {
-        margin-top: 2px;
-        margin-bottom: 2px;
-    }*/
+}
+
+@media (max-width: 767px) {
+    .mision-desktop {
+        display: none;
+    }
+    .mision-movil {
+        display: block;
+    }
+    .caja-texto-info {
+        margin-bottom: 0px;
+    }
+    .caja-texto-info-2 {
+        margin-top: 0px;
+    }
+    .esconderImagen {
+        display: none;
+    }
+    .tipografia-titulos-info {
+        font-size: 320%;
+    }
+    .images {
+        width: 95%;
+    }
+    .logo-header {
+        width: 45%;
+    }
 }
 
 @media (max-width: 570px) {
     .margen-contactenos {
         margin-top: 14%;
+    }
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
+    .caja-texto-info {
+        padding: 8%;
+    }
+    .tipografia-texto-cajas {
+        font-size: 16px;
     }
 }
 
@@ -644,13 +701,13 @@ button {
         font-size: 1rem;
     }
     .margen-contactenos {
-        margin-top: 18%;
+        margin-top: 12%;
     }
     .img-responsive {
         width: 55%;
     }
     .tipografia-titulos-info {
-        font-size: 2rem!important;
+        font-size: 2.4rem!important;
     }
     .clase {
         margin-top: 3%;
@@ -668,17 +725,29 @@ button {
         width: 280px;
     }
     .caja-info {
-        width: 300px;
+        width: 365px;
+    }
+    .logo-header {
+        width: 50%;
     }
 }
 
 @media (max-width: 393px) {
     .tipografia-titulos-info {
-        font-size: 1.1rem!important;
+        font-size: 2rem!important;
+    }
+    .margenesTexto {
+        font-size: 14px!important;
+    }
+    .logo-header {
+        width: 55%;
     }
 }
 
 @media (max-width: 360px) {
+    .logo-header {
+        width: 60%;
+    }
     .cajaTexto1-contactenos {
         height: 920px;
     }
@@ -688,9 +757,6 @@ button {
     .margen-contactenos {
         margin-top: 22%;
         font-size: 40px;
-    }
-    .tipografia-titulos-info {
-        font-size: 1.1rem!important;
     }
     .caja-header {
         margin-top: 50px;

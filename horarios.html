@@ -10,23 +10,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/animate.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet">
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/prueba.js"></script>
-    <script src="js/wow.min.js"></script>
     <title>Horarios</title>
-    <script>
-        new WOW().init();
-    </script>
 </head>
 
 <body>
     <header>
         <nav id="mynav" class="navbar navbar-expand-lg navbar-dark fixed-top background-header">
             <div class="container pt-2 pb-2">
-                <a class="navbar-brand mt-1" href="index.html" id="img">
-                    <img src="includes/img/logo.png" class="img-responsive logo" width="65%" alt="logo" id="myImage">
-                </a>
+                <img src="img/logo-header.png" onclick="location='index.html'" class="img-fluid logo-header" height="100" alt="logo" id="myImage">
                 <button id="boton-menu" class="navbar-toggler" onclick="efectobluir()" style="margin-top: 0;    margin-right: 7%;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -38,7 +29,7 @@
                             <a id="tipografia-cocon" class="nav-link letras " href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item mr-2">
-                            <a id="tipografia-cocon" class="nav-link letras " href="index.html">Información</a>
+                            <a id="tipografia-cocon" class="nav-link letras " href="info.html">Información</a>
                         </li>
 
                         <li class="nav-item mr-2">
@@ -86,7 +77,7 @@
 
         <div class=" container ">
             <center>
-                <h1 class="tipografia-titulos-cajas black " id="tipografia-cocon">Centros de Acopio</h1>
+                <h1 class="tipografia-titulos-cajas black wow flipInX" id="tipografia-cocon">Centros de Acopio</h1>
             </center>
             <h2 class="tipografia-titulos-formulario black margenesCuadro wow fadeInLeft" id="tipografia-cocon">Provincia de Puntarenas</h2>
 
@@ -224,7 +215,7 @@
 
                 <div>
                     <i class="fa fa-phone"></i>
-                    <p class="tipo-tamanio" id="tipografia-cocon">+2661-3456</p>
+                    <p class="tipo-tamanio" id="tipografia-cocon">2661-3456</p>
                 </div>
 
                 <div>
@@ -248,5 +239,11 @@
 
         </footer>
     </div>
-
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/prueba.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
