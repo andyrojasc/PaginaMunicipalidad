@@ -207,8 +207,6 @@ h1 {
 
 .caja-info {
     background-color: #52AA00;
-    margin-right: 5%;
-    margin-left: 5%;
     padding: 2%;
     width: 400px;
     text-align: center;
@@ -605,7 +603,7 @@ button {
 
 @media (max-width: 890px) {
     p {
-        font-size: 12px;
+        font-size: 14px;
     }
     .margenesTexto {
         margin-bottom: 11%;
@@ -632,6 +630,9 @@ button {
 }
 
 @media (max-width: 840px) {
+    .header-info {
+        margin-top: 50px;
+    }
     .margen-contactenos {
         margin-top: 9%;
     }
@@ -643,7 +644,6 @@ button {
         margin-bottom: 20px;
     }
     p {
-        font-size: 12px;
         margin-top: 2px;
         margin-bottom: 2px;
     }
@@ -677,9 +677,6 @@ button {
     .clase {
         margin-top: 3%;
     }
-    p {
-        font-size: 10px;
-    }
     .margenesTexto {
         margin-bottom: 10%;
     }
@@ -695,6 +692,9 @@ button {
     .vl {
         width: 280px;
     }
+    .caja-info {
+        width: 300px;
+    }
 }
 
 @media (max-width: 393px) {
@@ -707,9 +707,6 @@ button {
 }
 
 @media (max-width: 360px) {
-    .caja-info {
-        width: 300px;
-    }
     .margenesTexto {
         font-size: 10px;
     }
@@ -718,9 +715,6 @@ button {
     }
     .tipografia-titulos-info {
         font-size: 1.1rem!important;
-    }
-    p {
-        font-size: 0.5rem!important;
     }
     .caja-header {
         margin-top: 50px;
