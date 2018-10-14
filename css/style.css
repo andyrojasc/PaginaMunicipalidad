@@ -79,6 +79,10 @@ body {
 
 /*****************Pagina de contactos*******************/
 
+.margenRow {
+    width: 100%;
+}
+
 .background-header {
     background-image: url(../img/background-header.png);
     background-repeat: no-repeat;
@@ -631,7 +635,7 @@ button {
         font-size: 1rem;
     }
     .margen-contactenos {
-        margin-top: 21%;
+        margin-top: 18%;
     }
     .img-responsive {
         width: 55%;
