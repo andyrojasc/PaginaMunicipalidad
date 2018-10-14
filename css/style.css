@@ -241,8 +241,7 @@ p {
 }
 
 .caja-texto-info {
-    /*background-color: rgba(95, 183, 13, 0.8);*/
-    background: #52AA00;
+    background-color: rgba(36, 153, 21, 0.747);
     padding: 5%;
     text-align: center;
     margin-top: 10px;
