@@ -207,6 +207,10 @@ h1 {
 
 /***************Pagina de index*******************/
 
+.maxCajaHome {
+    max-width: 100%;
+}
+
 .background-index {
     background-image: url(../img/index/middle-04.jpg);
     background-repeat: no-repeat;
