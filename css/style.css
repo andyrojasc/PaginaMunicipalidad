@@ -839,11 +839,46 @@ button {
 }
 
 @media (max-width: 360px) {
+    h1 {
+        font-size: 20px!important;
+    }
+    h3 {
+        font-size: 16px!important;
+    }
+    h5 {
+        font-size: 14px!important;
+    }
+    .tipografia-titulos-cajas {
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+    .tipografia-texto-cajas {
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+    .tipografia-titulos-info {
+        font-size: 16px;
+    }
+    .tipografia-titulos-formulario {
+        font-size: 16px;
+    }
+    .margenes-cajas {
+        margin: 10% 10% 10% 10%;
+    }
+    .tel {
+        width: 30px;
+    }
+    .arroba {
+        width: 30px;
+    }
     .logo-header {
         width: 60%;
     }
+    .cajaTexto2-contactenos-formulario {
+        height: 650px;
+    }
     .cajaTexto1-contactenos {
-        height: 920px;
+        height: 600px;
     }
     .margenesTexto {
         font-size: 10px;
@@ -864,5 +899,17 @@ button {
     }
     .vl {
         width: 200px;
+    }
+    .tipo-tamanio {
+        font-size: 16px!important
+    }
+    .text-white {
+        font-size: 18px!important
+    }
+    span {
+        font-size: 20px!important
+    }
+    .caja-mensaje {
+        height: 250px;
     }
 }
