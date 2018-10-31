@@ -19,6 +19,11 @@
             padding-left: 0px;
             text-align: center;
         }
+        
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
         /*************************Header*******************************/
         
         .clase {
