@@ -333,6 +333,7 @@
         .header-horarios {
             background-image: url(../img/horarios/header-02.jpg);
             background-size: cover;
+            background-attachment: fixed;
             background-repeat: no-repeat;
             margin-top: 5%;
             background-position: center;
@@ -583,6 +584,10 @@
         .logoGestion {
             width: 35%;
         }
+        
+        .marg-foot {
+            margin-top: 50px;
+        }
         /**********************Efecto bluir****************/
         
         .efectoBluir {
@@ -592,6 +597,9 @@
         /*****************Media queries************************/
         
         @media (max-width: 1297px) {
+            .marg-foot {
+                margin-top: 16px;
+            }
             .margen-boton {
                 margin-bottom: 12%;
             }
