@@ -333,6 +333,7 @@
         .header-horarios {
             background-image: url(../img/horarios/header-02.jpg);
             background-size: cover;
+            background-attachment: fixed;
             background-repeat: no-repeat;
             margin-top: 5%;
             background-position: center;
