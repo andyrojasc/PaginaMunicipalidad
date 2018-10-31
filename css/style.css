@@ -467,7 +467,7 @@
         }
         
         .tipo-tamanio {
-            font-size: 23px!important;
+            font-size: 20px!important;
         }
         
         .vl {
@@ -598,7 +598,7 @@
         
         @media (max-width: 1297px) {
             .marg-foot {
-                margin-top: 16px;
+                margin-top: 30px;
             }
             .margen-boton {
                 margin-bottom: 12%;
@@ -619,6 +619,9 @@
         }
         
         @media (max-width: 990px) {
+            .tipo-tamanio {
+                font-size: 14px!important
+            }
             .margen-slider {
                 margin-top: 70px;
             }
@@ -927,7 +930,7 @@
                 width: 150px;
             }
             .tipo-tamanio {
-                font-size: 16px!important
+                font-size: 14px!important
             }
             .text-white {
                 font-size: 18px!important
