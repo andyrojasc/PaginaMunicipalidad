@@ -488,6 +488,12 @@
         }
         
         @media (max-width: 990px) {
+            h4 {
+                font-size: 20px;
+            }
+            .logoFacebook {
+                width: 12%;
+            }
             .tipo-tamanio {
                 font-size: 14px!important
             }
@@ -523,10 +529,6 @@
             }
             .centrar-texto-footer {
                 bottom: 50%;
-            }
-            .logoFacebook {
-                width: 18%;
-                margin-top: 6%;
             }
             .logoGestion {
                 width: 17%;
@@ -574,8 +576,11 @@
         }
         
         @media (max-width: 767px) {
+            h4 {
+                font-size: 1.2rem!important;
+            }
             .logoFacebook {
-                width: 21%;
+                width: 12%;
             }
             .caja-mensaje {
                 height: 350px;
@@ -633,10 +638,10 @@
         
         @media (max-width: 500px) {
             .logoFacebook {
-                width: 26%;
+                width: 15%;
             }
             .logoGestion {
-                width: 22%;
+                width: 15%;
             }
             .tipografia-texto-cajas {
                 font-size: 14px;
@@ -692,7 +697,7 @@
                 font-size: 1.2rem!important;
             }
             h4 {
-                font-size: 1.35rem!important;
+                font-size: 1rem!important;
             }
             a {
                 font-size: 1rem!important;
@@ -797,5 +802,8 @@
             }
             .caja-mensaje {
                 height: 250px;
+            }
+            .logoFacebook {
+                width: 15%;
             }
         }
