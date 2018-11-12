@@ -370,10 +370,27 @@
             color: black;
         }
         
+        .centertable {
+            margin-right: 60px;
+        }
+        
         .background-titles {
             background-color: #52AA00;
             border-style: solid;
             border-color: #ffffff;
+        }
+        
+        .selectfile {
+            margin-bottom: 60px;
+            background-color: #52AA00;
+            color: white;
+            border-style: solid;
+            font-family: "Comfortaa";
+            font-size: 18px;
+        }
+        
+        .tablaling {
+            margin-bottom: 60px;
         }
         /***************Fin de pagina de horarios*******************/
         /*************************Letras*******************************/
