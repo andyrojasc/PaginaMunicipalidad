@@ -370,10 +370,6 @@
             color: black;
         }
         
-        .centertable {
-            margin-right: 60px;
-        }
-        
         .background-titles {
             background-color: #52AA00;
             border-style: solid;
@@ -391,6 +387,10 @@
         
         .tablaling {
             margin-bottom: 60px;
+        }
+        
+        .table {
+            margin: 0 auto;
         }
         /***************Fin de pagina de horarios*******************/
         /*************************Letras*******************************/
