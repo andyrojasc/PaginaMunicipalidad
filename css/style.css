@@ -1,830 +1,980 @@
-        @font-face {
-            font-family: "Cocon";
-            src: url('../assets/fonts/Cocon-Regular.otf');
+    @font-face {
+        font-family: "Cocon";
+        src: url('../assets/fonts/Cocon-Regular.otf');
+    }
+    
+    @font-face {
+        font-family: "Comfortaa";
+        src: url('../assets/fonts/Comfortaa-Regular.ttf');
+        color: white;
+    }
+    
+    body {
+        background: #F2F4F3;
+        overflow-x: hidden;
+    }
+    
+    .div-col {
+        padding-right: 0px;
+        padding-left: 0px;
+        text-align: center;
+    }
+    
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /*************************Header*******************************/
+    
+    .clase {
+        margin-top: 10%;
+    }
+    
+    .carousel-caption {
+        transform: translateY(-50%);
+        bottom: 0;
+        top: 50%;
+    }
+    
+    .fondo {
+        transition-property: all;
+        transition-duration: 0.6s;
+        background: #6D8EA0;
+        /* opacity: 0.9;*/
+    }
+    
+    .letras {
+        font-size: 1.3rem;
+        color: rgba(255, 255, 255, 1)!important;
+    }
+    
+    .letras::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #B5E400;
+        transition: width .3s;
+    }
+    
+    .letras:hover::after {
+        width: 100%;
+    }
+    
+    .page::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #B5E400;
+        transition: width .3s;
+    }
+    
+    .logo-header {
+        margin-bottom: 1%;
+    }
+    
+    .logo-header:hover {
+        cursor: pointer;
+    }
+    /*************************Fin de header*******************************/
+    /*****************Pagina de contactos*******************/
+    
+    .margenRow {
+        width: 100%;
+    }
+    
+    .white {
+        color: white;
+    }
+    
+    .background-header {
+        background-image: url(../img/background-header.png);
+        background-repeat: no-repeat;
+        padding-right: 0;
+        max-width: 100%;
+    }
+    
+    .margen-contactenos {
+        margin-top: 4%;
+        background-image: url(../img/background-contactUs.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 48px;
+    }
+    
+    .fondo-formulario {
+        background-image: url(../img/background-form.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    
+    .cajaTexto1-contactenos {
+        border-color: #fff;
+        border-style: solid;
+        border-width: thin;
+        margin: 0% 4% 0% 5%;
+        height: 800px;
+    }
+    
+    .cajaTexto2-contactenos-formulario {
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 0% 5% 0% 5%;
+        height: 800px;
+    }
+    
+    .rayas-form:before,
+    .rayas-form:after {
+        width: 40%;
+        height: 40%;
+        content: '';
+        position: absolute;
+    }
+    
+    .rayas-form:before {
+        border-top: 3px solid white;
+        border-left: 3px solid white;
+    }
+    
+    .rayas-form:after {
+        border-right: 3px solid white;
+        border-bottom: 3px solid white;
+        bottom: 5%;
+        right: 6.5%;
+    }
+    
+    #tipografia-cocon {
+        font-family: "Cocon";
+    }
+    
+    #tipografia-conforta {
+        font-family: "Comfortaa";
+    }
+    
+    .tipografia-titulos-cajas {
+        font-size: 26px;
+    }
+    
+    .tipografia-titulos-formulario {
+        font-size: 20px;
+    }
+    
+    .tipografia-texto-cajas {
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .margenes-cajas {
+        margin: 10% 0% 4% 8%;
+    }
+    
+    .margenes-cajas-form {
+        margin: 0% 8% 0% 8%;
+    }
+    
+    .img-circle {
+        border-radius: 50%;
+        width: 50%;
+    }
+    
+    .tituloInfo-margen {
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    
+    .cards-estilo {
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .enviarbtn {
+        background-color: white;
+    }
+    /***************Fin de pagina de contactos*******************/
+    /***************Pagina de index*******************/
+    
+    .maxCajaHome {
+        max-width: 100%;
+    }
+    
+    .background-index {
+        background-image: url(../img/index/middle-04.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-right: 0;
+        max-width: 100%;
+        padding: 20px;
+    }
+    
+    .caja-mensaje {
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 0% 5% 0% 5%;
+        text-align: center;
+        align-content: center;
+        padding: 30px;
+    }
+    
+    .img-pies {
+        width: 30%;
+        align-content: center;
+    }
+    
+    .margen-slider {
+        margin-top: 80px;
+    }
+    
+    .tipografia-titulos-slider {
+        color: #fff;
+        font-size: 350%;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+    
+    .sliderImages {
+        width: 100%;
+    }
+    
+    .lineaVerde {
+        height: 2px;
+        background-color: #52AA00;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .margenesTextoindex {
+        margin-top: 11%;
+        margin-bottom: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .border-content-imagen1 {
+        border-left: 2px solid #52AA00;
+    }
+    
+    .border-content-imagen2 {
+        border-left: 2px solid #52AA00;
+    }
+    /***************Fin de pagina de index*******************/
+    /***************Pagina de info*******************/
+    
+    .header-info {
+        background-image: url(../img/Info/header-02-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 5%;
+        background-position: center;
+    }
+    
+    .caja-info {
+        background-color: #52AA00;
+        padding: 1%;
+        width: 400px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .images {
+        width: 100%;
+    }
+    
+    .container-text {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    p {
+        font-size: 18px;
+        color: black;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-family: "Comfortaa";
+    }
+    
+    .caja-texto-info {
+        background-color: rgba(36, 153, 21, 0.747);
+        padding: 5%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .caja-texto-info-2 {
+        background-color: #282625;
+        padding: 5%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .tipografia-titulos-info {
+        color: #fff;
+        font-size: 400%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+    
+    .mision-desktop {
+        display: block;
+    }
+    
+    .mision-movil {
+        display: none;
+    }
+    /***************Fin de pagina de info*******************/
+    /***************Pagina de horarios*******************/
+    
+    .header-horarios {
+        background-image: url(../img/horarios/header-02.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        margin-top: 5%;
+        background-position: center;
+        margin-bottom: 100px;
+    }
+    
+    .caja-header {
+        background-color: #52AA00;
+        padding: 2%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .caja-mapa {
+        background-color: #52AA00;
+        padding: 1.5%;
+        width: 200px;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 12px;
+    }
+    
+    .marg-prov {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .caja-mapa:hover {
+        background-color: rgb(69, 136, 7);
+        transition-duration: 0.5s;
+    }
+    
+    .C {
+        color: black;
+    }
+    
+    .background-titles {
+        background-color: #52AA00;
+        border-style: solid;
+        border-color: #ffffff;
+    }
+    
+    .selectfile {
+        margin-bottom: 60px;
+        background-color: #52AA00;
+        color: white;
+        border-style: solid;
+        font-family: "Comfortaa";
+        font-size: 18px;
+    }
+    
+    .tablaling {
+        margin-bottom: 60px;
+    }
+    
+    .table {
+        margin: 0 auto;
+    }
+    /***************Fin de pagina de horarios*******************/
+    /*************************Letras*******************************/
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    h5 {
+        font-size: 20px;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    /*************************Fin de letras*******************************/
+    
+    .h1Slider {
+        font-size: 3rem;
+    }
+    
+    .h4Slider {
+        font-size: 2rem;
+    }
+    
+    .desplegable {
+        position: relative!important;
+        padding-bottom: 64px;
+        margin-top: -95px;
+    }
+    
+    .margenesTexto {
+        margin-top: 11%;
+        margin-bottom: 5%;
+    }
+    
+    .margenesCuadro {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .cuadroTextoImag {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    
+    .marginBottom {
+        margin-bottom: 10%;
+    }
+    
+    button {
+        margin-top: 5%;
+    }
+    
+    .yas4r {
+        display: none;
+    }
+    
+    .fondoDeg {
+        width: 80%;
+        height: 1900px;
+        background: rgba(82, 170, 0, 1);
+        background: -moz-linear-gradient(left, rgba(82, 170, 0, 1) 0%, rgba(18, 18, 18, 1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(82, 170, 0, 1)), color-stop(100%, rgba(18, 18, 18, 1)));
+        background: -webkit-linear-gradient(left, rgba(82, 170, 0, 1) 0%, rgba(18, 18, 18, 1) 100%);
+        background: -o-linear-gradient(left, rgba(82, 170, 0, 1) 0%, rgba(18, 18, 18, 1) 100%);
+        background: -ms-linear-gradient(left, rgba(82, 170, 0, 1) 0%, rgba(18, 18, 18, 1) 100%);
+        background: linear-gradient(to right, rgba(82, 170, 0, 1) 0%, rgba(18, 18, 18, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#52aa00', endColorstr='#121212', GradientType=1);
+    }
+    
+    .white2 {
+        color: #fff;
+        font-size: 16px;
+    }
+    
+    .fondo4r {
+        margin-left: -100px;
+        width: 140%;
+        background: #282625;
+        border-radius: 3%;
+        padding: 30px;
+    }
+    
+    #texto {
+        position: relative;
+        z-index: 1;
+    }
+    
+    #imagen {
+        position: relative;
+        z-index: 0;
+    }
+    
+    .margenes4R {
+        margin-top: 90px;
+    }
+    
+    .margenestexto4R {
+        margin-top: 120px;
+    }
+    /*****************Footer************************/
+    
+    .footer-fondo {
+        background-image: url(../img/background-footer.png);
+    }
+    
+    .vl {
+        border-left: 5px solid #52AA00;
+        height: 130px;
+        margin-top: 2%;
+        position: absolute;
+        display: block;
+    }
+    
+    .centrar-texto-footer {
+        top: 50%;
+    }
+    
+    .logoFacebook {
+        width: 25%;
+        margin-top: 3.5%;
+    }
+    
+    .logoGestion {
+        width: 25%;
+    }
+    
+    .marg-foot {
+        margin-top: 50px;
+    }
+    /**********************Efecto bluir****************/
+    
+    .efectoBluir {
+        filter: blur(12px);
+        transition: all 0.1s ease;
+    }
+    /*****************Media queries************************/
+    
+    @media (max-width: 1297px) {
+        .margenes4R {
+            margin-top: 90px;
         }
-        
-        @font-face {
-            font-family: "Comfortaa";
-            src: url('../assets/fonts/Comfortaa-Regular.ttf');
-            color: white;
+        .white2 {
+            font-size: 15px;
         }
-        
-        body {
-            background: #F2F4F3;
-            overflow-x: hidden;
+        .margenestexto4R {
+            margin-top: 120px;
         }
-        
-        .div-col {
-            padding-right: 0px;
-            padding-left: 0px;
-            text-align: center;
+        .fondoDeg {
+            width: 80%;
+            height: 2100px;
         }
-        
-        .row {
-            margin-left: 0;
-            margin-right: 0;
+        .marg-foot {
+            margin-top: 30px;
         }
-        /*************************Header*******************************/
-        
-        .clase {
-            margin-top: 10%;
-        }
-        
-        .carousel-caption {
-            transform: translateY(-50%);
-            bottom: 0;
-            top: 50%;
-        }
-        
-        .fondo {
-            transition-property: all;
-            transition-duration: 0.6s;
-            background: #6D8EA0;
-            /* opacity: 0.9;*/
-        }
-        
-        .letras {
-            font-size: 1.3rem;
-            color: rgba(255, 255, 255, 1)!important;
-        }
-        
-        .letras::after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 2px;
-            background: #B5E400;
-            transition: width .3s;
-        }
-        
-        .letras:hover::after {
-            width: 100%;
-        }
-        
-        .page::after {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 2px;
-            background: #B5E400;
-            transition: width .3s;
-        }
-        
-        .logo-header {
-            margin-bottom: 1%;
-        }
-        
-        .logo-header:hover {
-            cursor: pointer;
-        }
-        /*************************Fin de header*******************************/
-        /*****************Pagina de contactos*******************/
-        
-        .margenRow {
-            width: 100%;
-        }
-        
-        .white {
-            color: white;
-        }
-        
-        .background-header {
-            background-image: url(../img/background-header.png);
-            background-repeat: no-repeat;
-            padding-right: 0;
-            max-width: 100%;
-        }
-        
-        .margen-contactenos {
-            margin-top: 4%;
-            background-image: url(../img/background-contactUs.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            font-size: 48px;
-        }
-        
-        .fondo-formulario {
-            background-image: url(../img/background-form.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        
-        h1 {
-            font-size: 35px;
-        }
-        
-        .cajaTexto1-contactenos {
-            border-color: #fff;
-            border-style: solid;
-            border-width: thin;
-            margin: 0% 4% 0% 5%;
-            height: 800px;
-        }
-        
-        .cajaTexto2-contactenos-formulario {
-            background-color: rgba(255, 255, 255, 0.2);
-            margin: 0% 5% 0% 5%;
-            height: 800px;
-        }
-        
-        .rayas-form:before,
-        .rayas-form:after {
-            width: 40%;
-            height: 40%;
-            content: '';
-            position: absolute;
-        }
-        
-        .rayas-form:before {
-            border-top: 3px solid white;
-            border-left: 3px solid white;
-        }
-        
-        .rayas-form:after {
-            border-right: 3px solid white;
-            border-bottom: 3px solid white;
-            bottom: 5%;
-            right: 6.5%;
-        }
-        
-        #tipografia-cocon {
-            font-family: "Cocon";
-        }
-        
-        #tipografia-conforta {
-            font-family: "Comfortaa";
-        }
-        
-        .tipografia-titulos-cajas {
-            font-size: 26px;
-        }
-        
-        .tipografia-titulos-formulario {
-            font-size: 20px;
-        }
-        
-        .tipografia-texto-cajas {
-            color: #fff;
-            font-size: 18px;
-        }
-        
-        .margenes-cajas {
-            margin: 10% 0% 4% 8%;
-        }
-        
-        .margenes-cajas-form {
-            margin: 0% 8% 0% 8%;
-        }
-        
-        .img-circle {
-            border-radius: 50%;
-            width: 50%;
-        }
-        
-        .tituloInfo-margen {
-            margin-top: 4%;
-            margin-bottom: 4%;
-        }
-        
-        .cards-estilo {
-            text-align: center;
-            margin-top: 5%;
-            margin-bottom: 5%;
-        }
-        
-        .enviarbtn {
-            background-color: white;
-        }
-        /***************Fin de pagina de contactos*******************/
-        /***************Pagina de index*******************/
-        
-        .maxCajaHome {
-            max-width: 100%;
-        }
-        
-        .background-index {
-            background-image: url(../img/index/middle-04.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            padding-right: 0;
-            max-width: 100%;
-            padding: 20px;
-        }
-        
-        .caja-mensaje {
-            background-color: rgba(255, 255, 255, 0.2);
-            margin: 0% 5% 0% 5%;
-            text-align: center;
-            align-content: center;
+        .fondo4r {
+            margin-left: -40px;
+            width: 120%;
+            background: #282625;
+            border-radius: 3%;
             padding: 30px;
         }
-        
-        .img-pies {
-            width: 30%;
-            align-content: center;
+        .margen-boton {
+            margin-bottom: 12%;
         }
-        
-        .margen-slider {
-            margin-top: 80px;
+        .margen-contactenos {
+            margin-top: 6%;
         }
-        
-        .tipografia-titulos-slider {
-            color: #fff;
-            font-size: 350%;
-            top: 50%;
-            left: 30%;
-            transform: translate(-50%, -50%);
-            position: absolute;
-        }
-        
-        .sliderImages {
-            width: 100%;
-        }
-        
-        .lineaVerde {
-            height: 2px;
-            background-color: #52AA00;
-            margin-top: 5%;
-            margin-bottom: 5%;
-        }
-        
-        .margenesTextoindex {
-            margin-top: 11%;
-            margin-bottom: 5%;
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-        
-        .border-content-imagen1 {
-            border-left: 2px solid #52AA00;
-        }
-        
-        .border-content-imagen2 {
-            border-left: 2px solid #52AA00;
-        }
-        /***************Fin de pagina de index*******************/
-        /***************Pagina de info*******************/
-        
-        .header-info {
-            background-image: url(../img/Info/header-02-02.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin-top: 5%;
-            background-position: center;
-        }
-        
-        .caja-info {
-            background-color: #52AA00;
-            padding: 1%;
-            width: 400px;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .images {
-            width: 100%;
-        }
-        
-        .container-text {
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-        
-        p {
-            font-size: 18px;
-            color: black;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            font-family: "Comfortaa";
-        }
-        
-        .caja-texto-info {
-            background-color: rgba(36, 153, 21, 0.747);
-            padding: 5%;
-            text-align: center;
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-        
-        .caja-texto-info-2 {
-            background-color: #282625;
-            padding: 5%;
-            text-align: center;
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-        
         .tipografia-titulos-info {
-            color: #fff;
-            font-size: 400%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            position: absolute;
+            font-size: 2.5rem!important;
         }
-        
-        .mision-desktop {
-            display: block;
+    }
+    
+    @media (max-width: 1169px) {
+        .margenestexto4R {
+            margin-top: -50px;
+            margin-bottom: 50px;
+            margin-left: -150px;
         }
-        
-        .mision-movil {
+        .margenestexto4R2 {
+            margin-top: -50px;
+            margin-bottom: 50px;
+            margin-left: 110px;
+        }
+        .none4r {
             display: none;
         }
-        /***************Fin de pagina de info*******************/
-        /***************Pagina de horarios*******************/
-        
-        .header-horarios {
-            background-image: url(../img/horarios/header-02.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            margin-top: 5%;
-            background-position: center;
-            margin-bottom: 100px;
+        .yas4r {
+            display: unset;
         }
-        
-        .caja-header {
-            background-color: #52AA00;
-            padding: 2%;
-            margin-top: 20px;
-            margin-bottom: 50px;
+        .fondo4r {
+            width: 100%;
+            background: #282625;
+            border-radius: 3%;
+            padding: 30px;
         }
-        
-        .caja-mapa {
-            background-color: #52AA00;
-            padding: 1.5%;
-            width: 200px;
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            border-radius: 12px;
+        .fondoDeg {
+            width: 90%;
+            height: 2800px;
         }
-        
-        .marg-prov {
-            margin-top: 20px;
-            margin-bottom: 40px;
+    }
+    
+    @media (max-width: 1000px) {
+        .marginContact {
+            margin-top: 10%;
+            margin-bottom: 5%;
         }
-        
-        .caja-mapa:hover {
-            background-color: rgb(69, 136, 7);
-            transition-duration: 0.5s;
+        .white2 {
+            color: #fff;
+            font-size: 14px;
         }
-        
-        .C {
-            color: black;
+        .fondoDeg {
+            width: 90%;
+            height: 2600px;
         }
-        
-        .background-titles {
-            background-color: #52AA00;
-            border-style: solid;
-            border-color: #ffffff;
-        }
-        
-        .selectfile {
-            margin-bottom: 60px;
-            background-color: #52AA00;
-            color: white;
-            border-style: solid;
-            font-family: "Comfortaa";
-            font-size: 18px;
-        }
-        
-        .tablaling {
-            margin-bottom: 60px;
-        }
-        
-        .table {
-            margin: 0 auto;
-        }
-        /***************Fin de pagina de horarios*******************/
-        /*************************Letras*******************************/
-        
-        h2 {
-            font-size: 30px;
-        }
-        
-        h5 {
+    }
+    
+    @media (max-width: 990px) {
+        h4 {
             font-size: 20px;
         }
-        
-        a:hover {
-            text-decoration: none;
+        .logoFacebook {
+            width: 12%;
         }
-        /*************************Fin de letras*******************************/
-        
-        .h1Slider {
-            font-size: 3rem;
+        .tipo-tamanio {
+            font-size: 14px!important
         }
-        
-        .h4Slider {
-            font-size: 2rem;
+        .margen-slider {
+            margin-top: 70px;
         }
-        
-        .desplegable {
-            position: relative!important;
-            padding-bottom: 64px;
-            margin-top: -95px;
+        .tipo-tamanio {
+            margin-left: -2%!important;
         }
-        
-        .margenesTexto {
-            margin-top: 11%;
-            margin-bottom: 5%;
-        }
-        
-        .margenesCuadro {
-            margin-top: 5%;
-            margin-bottom: 5%;
-        }
-        
-        .cuadroTextoImag {
-            width: 90%;
-            margin-bottom: 40px;
-        }
-        
-        .marginBottom {
-            margin-bottom: 10%;
-        }
-        
-        button {
-            margin-top: 5%;
-        }
-        /*****************Footer************************/
-        
-        .footer-fondo {
-            background-image: url(../img/background-footer.png);
-        }
-        
-        .vl {
-            border-left: 5px solid #52AA00;
-            height: 130px;
-            margin-top: 2%;
-            position: absolute;
-            display: block;
-        }
-        
-        .centrar-texto-footer {
+        .tipografia-titulos-slider {
+            font-size: 250%;
             top: 50%;
         }
-        
-        .logoFacebook {
-            width: 25%;
-            margin-top: 3.5%;
+        .logo-header {
+            width: 30%;
         }
-        
+        .footer-distributed .footer-center p {
+            display: block;
+        }
+        .letras:hover::after {
+            display: none;
+        }
+        .margen-contactenos {
+            margin-top: 8%;
+        }
+        .rayas-form:before {
+            top: 5.6%;
+            left: 6.5%;
+        }
+        .rayas-form:after {
+            bottom: 5.6%;
+            right: 6.5%;
+        }
+        .centrar-texto-footer {
+            bottom: 50%;
+        }
         .logoGestion {
-            width: 25%;
+            width: 17%;
+            margin-top: 6%;
         }
-        
-        .marg-foot {
+        .texto-Logo-Footer {
+            margin-bottom: 6%;
+        }
+        .vl {
+            border-bottom: 3px solid #52AA00;
+            position: relative;
+            display: block;
+            width: 300px;
+            margin: auto;
+            height: 0;
+        }
+    }
+    
+    @media (max-width: 890px) {
+        p {
+            font-size: 14px;
+        }
+        .margenesTexto {
+            margin-bottom: 11%;
+        }
+        .margen-contactenos {
+            margin-top: 9%;
+        }
+    }
+    
+    @media (max-width: 840px) {
+        .fondoDeg {
+            width: 90%;
+            height: 2500px;
+        }
+        .header-info {
             margin-top: 50px;
         }
-        /**********************Efecto bluir****************/
-        
-        .efectoBluir {
-            filter: blur(12px);
-            transition: all 0.1s ease;
+        .margen-contactenos {
+            margin-top: 9%;
         }
-        /*****************Media queries************************/
-        
-        @media (max-width: 1297px) {
-            .marg-foot {
-                margin-top: 30px;
-            }
-            .margen-boton {
-                margin-bottom: 12%;
-            }
-            .margen-contactenos {
-                margin-top: 6%;
-            }
-            .tipografia-titulos-info {
-                font-size: 2.5rem!important;
-            }
+        .margenesCuadro {
+            margin-top: 30px;
         }
-        
-        @media (max-width: 1000px) {
-            .marginContact {
-                margin-top: 10%;
-                margin-bottom: 5%;
-            }
+        .margenesTexto {
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
-        
-        @media (max-width: 990px) {
-            h4 {
-                font-size: 20px;
-            }
-            .logoFacebook {
-                width: 12%;
-            }
-            .tipo-tamanio {
-                font-size: 14px!important
-            }
-            .margen-slider {
-                margin-top: 70px;
-            }
-            .tipo-tamanio {
-                margin-left: -2%!important;
-            }
-            .tipografia-titulos-slider {
-                font-size: 250%;
-                top: 50%;
-            }
-            .logo-header {
-                width: 30%;
-            }
-            .footer-distributed .footer-center p {
-                display: block;
-            }
-            .letras:hover::after {
-                display: none;
-            }
-            .margen-contactenos {
-                margin-top: 8%;
-            }
-            .rayas-form:before {
-                top: 5.6%;
-                left: 6.5%;
-            }
-            .rayas-form:after {
-                bottom: 5.6%;
-                right: 6.5%;
-            }
-            .centrar-texto-footer {
-                bottom: 50%;
-            }
-            .logoGestion {
-                width: 17%;
-                margin-top: 6%;
-            }
-            .texto-Logo-Footer {
-                margin-bottom: 6%;
-            }
-            .vl {
-                border-bottom: 3px solid #52AA00;
-                position: relative;
-                display: block;
-                width: 300px;
-                margin: auto;
-                height: 0;
-            }
+    }
+    
+    @media (max-width: 767px) {
+        .margenestexto4R {
+            margin-top: 0px;
+            margin-bottom: 50px;
+            margin-left: -0px;
         }
-        
-        @media (max-width: 890px) {
-            p {
-                font-size: 14px;
-            }
-            .margenesTexto {
-                margin-bottom: 11%;
-            }
-            .margen-contactenos {
-                margin-top: 9%;
-            }
+        .margenestexto4R2 {
+            margin-top: 0px;
+            margin-bottom: 50px;
+            margin-left: -0px;
         }
-        
-        @media (max-width: 840px) {
-            .header-info {
-                margin-top: 50px;
-            }
-            .margen-contactenos {
-                margin-top: 9%;
-            }
-            .margenesCuadro {
-                margin-top: 30px;
-            }
-            .margenesTexto {
-                margin-top: 20px;
-                margin-bottom: 20px;
-            }
+        .fondo4r {
+            width: 100%;
         }
-        
-        @media (max-width: 767px) {
-            h4 {
-                font-size: 1.2rem!important;
-            }
-            .logoFacebook {
-                width: 12%;
-            }
-            .caja-mensaje {
-                height: 350px;
-            }
-            .img-pies {
-                width: 40%;
-            }
-            .tipografia-titulos-slider {
-                font-size: 220%;
-            }
-            .mision-desktop {
-                display: none;
-            }
-            .mision-movil {
-                display: block;
-            }
-            .caja-texto-info {
-                margin-bottom: 0px;
-            }
-            .caja-texto-info-2 {
-                margin-top: 0px;
-            }
-            .esconderImagen {
-                display: none;
-            }
-            .tipografia-titulos-info {
-                font-size: 320%;
-            }
-            .images {
-                width: 95%;
-            }
-            .logo-header {
-                width: 45%;
-            }
+        .fondoDeg {
+            width: 90%;
+            height: 2900px;
         }
-        
-        @media (max-width: 570px) {
-            .tipografia-titulos-slider {
-                font-size: 150%;
-                align-content: center;
-            }
-            .margen-contactenos {
-                margin-top: 14%;
-            }
-            .jumbotron {
-                padding: 4rem 2rem;
-            }
-            .caja-texto-info {
-                padding: 8%;
-            }
-            .tipografia-texto-cajas {
-                font-size: 16px;
-            }
+        h4 {
+            font-size: 1.2rem!important;
         }
-        
-        @media (max-width: 500px) {
-            .logoFacebook {
-                width: 15%;
-            }
-            .logoGestion {
-                width: 15%;
-            }
-            .tipografia-texto-cajas {
-                font-size: 14px;
-                margin-top: 2px;
-                margin-bottom: 2px;
-            }
-            .tipografia-titulos-cajas {
-                font-size: 10px;
-                margin-top: 2px;
-                margin-bottom: 20px;
-            }
-            .letras {
-                font-size: 1rem;
-            }
-            .margen-contactenos {
-                margin-top: 12%;
-            }
-            .img-responsive {
-                width: 55%;
-            }
-            .clase {
-                margin-top: 3%;
-            }
-            .margenesTexto {
-                margin-bottom: 10%;
-            }
-            .rayas-form:before {
-                left: 7%;
-            }
-            .rayas-form:after {
-                right: 7%;
-            }
-            .cajaTexto1-contactenos {
-                height: 550px;
-            }
-            .cajaTexto2-contactenos-formulario {
-                height: 650px;
-            }
-            .caja-info {
-                width: 200px;
-                margin-bottom: 20px;
-            }
-            .logo-header {
-                width: 50%;
-            }
-            h1 {
-                font-size: 1.5rem!important;
-            }
-            h3 {
-                font-size: 1.5rem!important;
-            }
-            h5 {
-                font-size: 1.2rem!important;
-            }
-            h4 {
-                font-size: 1rem!important;
-            }
-            a {
-                font-size: 1rem!important;
-            }
-            span {
-                font-size: 1.2rem!important;
-            }
-            .tel,
-            .arroba {
-                width: 35px;
-            }
-            .fa {
-                font-size: 1.5rem!important;
-            }
+        .logoFacebook {
+            width: 12%;
         }
-        
-        @media (max-width: 393px) {
-            .tipografia-titulos-info {
-                font-size: 2rem!important;
-            }
-            .margenesTexto {
-                font-size: 14px!important;
-            }
-            .logo-header {
-                width: 55%;
-            }
-            .vl {
-                width: 250px;
-            }
+        .caja-mensaje {
+            height: 350px;
         }
-        
-        @media (max-width: 360px) {
-            h1 {
-                font-size: 20px!important;
-            }
-            h3 {
-                font-size: 16px!important;
-            }
-            h5 {
-                font-size: 14px!important;
-            }
-            .tipografia-titulos-cajas {
-                font-size: 16px;
-                margin-bottom: 20px;
-            }
-            .tipografia-texto-cajas {
-                font-size: 12px;
-                margin-bottom: 2px;
-            }
-            .tipografia-titulos-info {
-                font-size: 18px!important;
-            }
-            .tipografia-titulos-formulario {
-                font-size: 16px;
-            }
-            .margenes-cajas {
-                margin: 10% 10% 10% 10%;
-            }
-            .tel {
-                width: 30px;
-            }
-            .arroba {
-                width: 30px;
-            }
-            .logo-header {
-                width: 60%;
-            }
-            .cajaTexto2-contactenos-formulario {
-                height: 650px;
-            }
-            .cajaTexto1-contactenos {
-                height: 600px;
-            }
-            .margenesTexto {
-                font-size: 10px;
-            }
-            .margen-contactenos {
-                margin-top: 22%;
-                font-size: 40px;
-            }
-            .caja-header {
-                margin-top: 50px;
-                margin-bottom: 20px;
-            }
-            .rayas-form:before {
-                left: 7.9%;
-            }
-            .rayas-form:after {
-                right: 7.9%;
-            }
-            .vl {
-                width: 150px;
-            }
-            .tipo-tamanio {
-                font-size: 14px!important
-            }
-            .text-white {
-                font-size: 18px!important
-            }
-            span {
-                font-size: 20px!important
-            }
-            .caja-mensaje {
-                height: 250px;
-            }
-            .logoFacebook {
-                width: 15%;
-            }
+        .img-pies {
+            width: 40%;
         }
+        .tipografia-titulos-slider {
+            font-size: 220%;
+        }
+        .mision-desktop {
+            display: none;
+        }
+        .mision-movil {
+            display: block;
+        }
+        .caja-texto-info {
+            margin-bottom: 0px;
+        }
+        .caja-texto-info-2 {
+            margin-top: 0px;
+        }
+        .esconderImagen {
+            display: none;
+        }
+        .tipografia-titulos-info {
+            font-size: 320%;
+        }
+        .images {
+            width: 95%;
+        }
+        .logo-header {
+            width: 45%;
+        }
+    }
+    
+    @media (max-width: 714px) {
+        .fondoDeg {
+            width: 90%;
+            height: 2800px;
+        }
+        .margenes4R {
+            margin-top: 40px;
+        }
+    }
+    
+    @media (max-width: 570px) {
+        .fondoDeg {
+            width: 90%;
+            height: 2700px;
+        }
+        .tipografia-titulos-slider {
+            font-size: 150%;
+            align-content: center;
+        }
+        .margen-contactenos {
+            margin-top: 14%;
+        }
+        .jumbotron {
+            padding: 4rem 2rem;
+        }
+        .caja-texto-info {
+            padding: 8%;
+        }
+        .tipografia-texto-cajas {
+            font-size: 16px;
+        }
+    }
+    
+    @media (max-width: 500px) {
+        .logoFacebook {
+            width: 15%;
+        }
+        .logoGestion {
+            width: 15%;
+        }
+        .tipografia-texto-cajas {
+            font-size: 14px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        .tipografia-titulos-cajas {
+            font-size: 10px;
+            margin-bottom: 20px;
+        }
+        .letras {
+            font-size: 1rem;
+        }
+        .margen-contactenos {
+            margin-top: 12%;
+        }
+        .img-responsive {
+            width: 55%;
+        }
+        .clase {
+            margin-top: 3%;
+        }
+        .margenesTexto {
+            margin-bottom: 10%;
+        }
+        .rayas-form:before {
+            left: 7%;
+        }
+        .rayas-form:after {
+            right: 7%;
+        }
+        .cajaTexto1-contactenos {
+            height: 550px;
+        }
+        .cajaTexto2-contactenos-formulario {
+            height: 650px;
+        }
+        .caja-info {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        .logo-header {
+            width: 50%;
+        }
+        h1 {
+            font-size: 20px !important;
+        }
+        h3 {
+            font-size: 1.5rem!important;
+        }
+        h5 {
+            font-size: 1.2rem!important;
+        }
+        h4 {
+            font-size: 1rem!important;
+        }
+        a {
+            font-size: 1rem!important;
+        }
+        span {
+            font-size: 1.2rem!important;
+        }
+        .tel,
+        .arroba {
+            width: 35px;
+        }
+        .fa {
+            font-size: 1.5rem!important;
+        }
+    }
+    
+    @media (max-width: 393px) {
+        .fondoDeg {
+            width: 90%;
+            height: 2850px;
+        }
+        .tipografia-titulos-info {
+            font-size: 2rem!important;
+        }
+        .margenesTexto {
+            font-size: 14px!important;
+        }
+        .logo-header {
+            width: 55%;
+        }
+        .vl {
+            width: 250px;
+        }
+    }
+    
+    @media (max-width: 360px) {
+        h1 {
+            font-size: 15px!important;
+        }
+        h3 {
+            font-size: 16px!important;
+        }
+        h5 {
+            font-size: 14px!important;
+        }
+        .tipografia-titulos-cajas {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .tipografia-texto-cajas {
+            font-size: 12px;
+            margin-bottom: 2px;
+        }
+        .tipografia-titulos-info {
+            font-size: 18px!important;
+        }
+        .tipografia-titulos-formulario {
+            font-size: 16px;
+        }
+        .margenes-cajas {
+            margin: 10% 10% 10% 10%;
+        }
+        .tel {
+            width: 30px;
+        }
+        .arroba {
+            width: 30px;
+        }
+        .logo-header {
+            width: 60%;
+        }
+        .cajaTexto2-contactenos-formulario {
+            height: 650px;
+        }
+        .cajaTexto1-contactenos {
+            height: 600px;
+        }
+        .margenesTexto {
+            font-size: 10px;
+        }
+        .margen-contactenos {
+            margin-top: 22%;
+            font-size: 40px;
+        }
+        .caja-header {
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        .rayas-form:before {
+            left: 7.9%;
+        }
+        .rayas-form:after {
+            right: 7.9%;
+        }
+        .vl {
+            width: 150px;
+        }
+        .tipo-tamanio {
+            font-size: 14px!important
+        }
+        .text-white {
+            font-size: 18px!important
+        }
+        span {
+            font-size: 20px!important
+        }
+        .caja-mensaje {
+            height: 250px;
+        }
+        .logoFacebook {
+            width: 15%;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .fondoDeg {
+            width: 90%;
+            height: 3100px;
+        }
+    }
