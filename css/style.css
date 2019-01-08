@@ -455,7 +455,7 @@
     
     .fondoDeg {
         width: 80%;
-        height: 1900px;
+        height: 100%;
         background: rgba(82, 170, 0, 1);
         background: -moz-linear-gradient(left, rgba(82, 170, 0, 1) 0%, rgba(18, 18, 18, 1) 100%);
         background: -webkit-gradient(left top, right top, color-stop(0%, rgba(82, 170, 0, 1)), color-stop(100%, rgba(18, 18, 18, 1)));
@@ -546,7 +546,6 @@
         }
         .fondoDeg {
             width: 80%;
-            height: 2100px;
         }
         .marg-foot {
             margin-top: 30px;
@@ -594,7 +593,6 @@
         }
         .fondoDeg {
             width: 90%;
-            height: 2800px;
         }
     }
     
@@ -609,7 +607,6 @@
         }
         .fondoDeg {
             width: 90%;
-            height: 2600px;
         }
     }
     
@@ -688,7 +685,6 @@
     @media (max-width: 840px) {
         .fondoDeg {
             width: 90%;
-            height: 2500px;
         }
         .header-info {
             margin-top: 50px;
@@ -721,7 +717,6 @@
         }
         .fondoDeg {
             width: 90%;
-            height: 2900px;
         }
         h4 {
             font-size: 1.2rem!important;
@@ -767,7 +762,6 @@
     @media (max-width: 714px) {
         .fondoDeg {
             width: 90%;
-            height: 2800px;
         }
         .margenes4R {
             margin-top: 40px;
@@ -777,7 +771,6 @@
     @media (max-width: 570px) {
         .fondoDeg {
             width: 90%;
-            height: 2700px;
         }
         .tipografia-titulos-slider {
             font-size: 150%;
@@ -877,7 +870,6 @@
     @media (max-width: 393px) {
         .fondoDeg {
             width: 90%;
-            height: 2850px;
         }
         .tipografia-titulos-info {
             font-size: 2rem!important;
@@ -975,6 +967,5 @@
     @media (max-width: 320px) {
         .fondoDeg {
             width: 90%;
-            height: 3100px;
         }
     }
